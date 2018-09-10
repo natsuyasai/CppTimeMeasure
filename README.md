@@ -8,6 +8,7 @@ C++11以降対応時間計測用クラス
 
 int main()
 {
+	// 開始時間記録
 	TimeMeasure::getInstance().startMeasure();
 
 	for (int i = 0; i < 100; i++)
@@ -18,11 +19,13 @@ int main()
 			delete dmy;
 		}
 	}
-
+	// 終了時間記録
 	TimeMeasure::getInstance().stopMeasure();
-
+	// 結果表示(ms)
 	TimeMeasure::getInstance().printResult();
+	// 結果表示(ns)
 	TimeMeasure::getInstance().printResult(PrintUnit::nano);
-  return 0;
+
+	return 0;
 }
 ```
