@@ -5,6 +5,7 @@ C++11以降対応時間計測用クラス
 # exsample
 ```
 #include "TimeMeasure.h"
+using namespace YasaiUtility;
 
 int main()
 {
